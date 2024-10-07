@@ -18,6 +18,7 @@
 		4650142C2C7239F1002E0770 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4650142B2C7239F1002E0770 /* DownloadViewController.swift */; };
 		465014332C723F64002E0770 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465014322C723F64002E0770 /* CollectionViewTableViewCell.swift */; };
 		465014352C72435B002E0770 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465014342C72435B002E0770 /* HeroHeaderUIView.swift */; };
+		46605DEE2CB2F33B007B7333 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46605DED2CB2F33B007B7333 /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		4650142B2C7239F1002E0770 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		465014322C723F64002E0770 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 		465014342C72435B002E0770 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
+		46605DED2CB2F33B007B7333 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		465014302C723F2F002E0770 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				46605DED2CB2F33B007B7333 /* APICaller.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				4650142A2C72399C002E0770 /* SearchViewController.swift in Sources */,
 				465014152C7237FF002E0770 /* MainTabBarViewController.swift in Sources */,
 				465014332C723F64002E0770 /* CollectionViewTableViewCell.swift in Sources */,
+				46605DEE2CB2F33B007B7333 /* APICaller.swift in Sources */,
 				465014352C72435B002E0770 /* HeroHeaderUIView.swift in Sources */,
 				465014112C7237FF002E0770 /* AppDelegate.swift in Sources */,
 				4650142C2C7239F1002E0770 /* DownloadViewController.swift in Sources */,

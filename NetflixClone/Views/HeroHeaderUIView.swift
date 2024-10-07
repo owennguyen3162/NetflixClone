@@ -39,6 +39,15 @@ class HeroHeaderUIView: UIView {
         return imageView
     }()
     
+    private let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.spacing = 20
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
     private func addGradient() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [
@@ -55,6 +64,7 @@ class HeroHeaderUIView: UIView {
         addGradient()
         addSubview(playButton)
         addSubview(downloadButton)
+        addSubview(stackView)
         applyConstraints()
     }
     
@@ -68,19 +78,18 @@ class HeroHeaderUIView: UIView {
     }
     
     private func applyConstraints() {
-        let playButtonConstraints = [
-            playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 70),
-            playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
-            playButton.widthAnchor.constraint(equalToConstant: 120)
+        
+        let uiStackView = [
+            stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
+            stackView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 1.5)
         ]
         
-        let downloadButton = [
-            downloadButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -70),
-            downloadButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -50),
-            downloadButton.widthAnchor.constraint(equalToConstant: 120),
-        ]
-        NSLayoutConstraint.activate(playButtonConstraints)
-        NSLayoutConstraint.activate(downloadButton)
+        stackView.addArrangedSubview(playButton)
+        stackView.addArrangedSubview(downloadButton)
+        
+        NSLayoutConstraint.activate(uiStackView)
+        
     }
     
     
